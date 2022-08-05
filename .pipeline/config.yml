@@ -24,8 +24,8 @@
     Release:
        cloudFoundryDeploy: true
        tmsUpload: false
-    steps:
-      cloudFoundryDeploy:
+ steps:
+    cloudFoundryDeploy:
         cloudFoundry: 
           apiEndpoint: "https://api.cf.us10.hana.ondemand.com"
           org: "a244dab4trial"
@@ -33,5 +33,5 @@
           credentialsId: "cfdeploy"
           appName: ""
         mtaDeployParameters: "-f --version-rule ALL"
-      artifactPrepareVersion:
+    artifactPrepareVersion:
         versioningType: "cloud_noTag"
